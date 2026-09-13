@@ -1,0 +1,2250 @@
+{
+  "kind": "srg-transport-verification",
+  "minOverlap": 5,
+  "groundTruthRecords": 119,
+  "sources": {
+    "brouwerTable": "https://aeb.win.tue.nl/graphs/srg/srgtab.html",
+    "brouwerMonograph": "https://homepages.cwi.nl/~aeb/math/srg/rk3/srgw.pdf",
+    "conferencePaper": "https://arxiv.org/abs/2004.05829",
+    "mathlibHadamardDefinition": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/LinearAlgebra/Matrix/HadamardMatrix.html"
+  },
+  "transports": [
+    {
+      "name": "srg-complement",
+      "type": "EQUIVALENCE",
+      "tier": "published-proof",
+      "receipt": "Classical SRG complement involution; parameters re-derived algebraically and cross-checked against Brouwer rows.",
+      "verified": true,
+      "overlap": 70,
+      "exists": 53,
+      "none": 17,
+      "oneSided": false,
+      "agreements": [
+        {
+          "case": "(5, 2, 0, 1)",
+          "left": {
+            "node": "srg:5,2,0,1",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(5) / conference parameters"
+          },
+          "right": {
+            "node": "srg:5,2,0,1",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(5) / conference parameters"
+          }
+        },
+        {
+          "case": "(9, 4, 1, 2)",
+          "left": {
+            "node": "srg:9,4,1,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 3^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:9,4,1,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 3^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "(10, 3, 0, 1)",
+          "left": {
+            "node": "srg:10,3,0,1",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (10, 6, 3, 4) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:10,6,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(5)"
+          }
+        },
+        {
+          "case": "(13, 6, 2, 3)",
+          "left": {
+            "node": "srg:13,6,2,3",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(13) / conference parameters"
+          },
+          "right": {
+            "node": "srg:13,6,2,3",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(13) / conference parameters"
+          }
+        },
+        {
+          "case": "(15, 6, 1, 3)",
+          "left": {
+            "node": "srg:15,6,1,3",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (15, 8, 4, 4) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:15,8,4,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(6)"
+          }
+        },
+        {
+          "case": "(16, 6, 2, 2)",
+          "left": {
+            "node": "srg:16,6,2,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (16, 9, 4, 6) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:16,9,4,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(4,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "(17, 8, 3, 4)",
+          "left": {
+            "node": "srg:17,8,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(17) / conference parameters"
+          },
+          "right": {
+            "node": "srg:17,8,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(17) / conference parameters"
+          }
+        },
+        {
+          "case": "(21, 10, 3, 6)",
+          "left": {
+            "node": "srg:21,10,3,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (21, 10, 5, 4) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:21,10,5,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(7)"
+          }
+        },
+        {
+          "case": "(21, 10, 4, 5)",
+          "left": {
+            "node": "srg:21,10,4,5",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: conference parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:21,10,4,5",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "(25, 8, 3, 2)",
+          "left": {
+            "node": "srg:25,8,3,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 5^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:25,16,9,12",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (25, 8, 3, 2) in Brouwer table"
+          }
+        },
+        {
+          "case": "(25, 12, 5, 6)",
+          "left": {
+            "node": "srg:25,12,5,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(5,3) / Latin-square graph parameters"
+          },
+          "right": {
+            "node": "srg:25,12,5,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(5,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "(26, 10, 3, 4)",
+          "left": {
+            "node": "srg:26,10,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (26, 15, 8, 9) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:26,15,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: block graph of S(2,3,13)"
+          }
+        },
+        {
+          "case": "(28, 9, 0, 4)",
+          "left": {
+            "node": "srg:28,9,0,4",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:28,18,12,10",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (28, 9, 0, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(28, 12, 6, 4)",
+          "left": {
+            "node": "srg:28,12,6,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(8)"
+          },
+          "right": {
+            "node": "srg:28,15,6,10",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (28, 12, 6, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(29, 14, 6, 7)",
+          "left": {
+            "node": "srg:29,14,6,7",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(29) / conference parameters"
+          },
+          "right": {
+            "node": "srg:29,14,6,7",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(29) / conference parameters"
+          }
+        },
+        {
+          "case": "(33, 16, 7, 8)",
+          "left": {
+            "node": "srg:33,16,7,8",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: conference parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:33,16,7,8",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "(35, 16, 6, 8)",
+          "left": {
+            "node": "srg:35,16,6,8",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (35, 18, 9, 9) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:35,18,9,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: block graph of S(2,3,15)"
+          }
+        },
+        {
+          "case": "(36, 10, 4, 2)",
+          "left": {
+            "node": "srg:36,10,4,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 6^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:36,25,16,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (36, 10, 4, 2) in Brouwer table"
+          }
+        },
+        {
+          "case": "(36, 14, 7, 4)",
+          "left": {
+            "node": "srg:36,14,7,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(9)"
+          },
+          "right": {
+            "node": "srg:36,21,10,15",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (36, 14, 7, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(36, 15, 6, 6)",
+          "left": {
+            "node": "srg:36,15,6,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(6,3) / Latin-square graph parameters"
+          },
+          "right": {
+            "node": "srg:36,20,10,12",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (36, 15, 6, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "(37, 18, 8, 9)",
+          "left": {
+            "node": "srg:37,18,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(37) / conference parameters"
+          },
+          "right": {
+            "node": "srg:37,18,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(37) / conference parameters"
+          }
+        },
+        {
+          "case": "(41, 20, 9, 10)",
+          "left": {
+            "node": "srg:41,20,9,10",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(41) / conference parameters"
+          },
+          "right": {
+            "node": "srg:41,20,9,10",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(41) / conference parameters"
+          }
+        },
+        {
+          "case": "(45, 16, 8, 4)",
+          "left": {
+            "node": "srg:45,16,8,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(10)"
+          },
+          "right": {
+            "node": "srg:45,28,15,21",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (45, 16, 8, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(49, 12, 5, 2)",
+          "left": {
+            "node": "srg:49,12,5,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 7^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:49,36,25,30",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (49, 12, 5, 2) in Brouwer table"
+          }
+        },
+        {
+          "case": "(49, 16, 3, 6)",
+          "left": {
+            "node": "srg:49,16,3,6",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:49,32,21,20",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (49, 16, 3, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "(49, 18, 7, 6)",
+          "left": {
+            "node": "srg:49,18,7,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(7,3) / Latin-square graph parameters"
+          },
+          "right": {
+            "node": "srg:49,30,17,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (49, 18, 7, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "(49, 24, 11, 12)",
+          "left": {
+            "node": "srg:49,24,11,12",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(49) / conference parameters"
+          },
+          "right": {
+            "node": "srg:49,24,11,12",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(49) / conference parameters"
+          }
+        },
+        {
+          "case": "(50, 21, 4, 12)",
+          "left": {
+            "node": "srg:50,21,4,12",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:50,28,18,12",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (50, 21, 4, 12) in Brouwer table"
+          }
+        },
+        {
+          "case": "(50, 21, 8, 9)",
+          "left": {
+            "node": "srg:50,21,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (50, 28, 15, 16) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:50,28,15,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: block graph of S(2,4,25)"
+          }
+        },
+        {
+          "case": "(53, 26, 12, 13)",
+          "left": {
+            "node": "srg:53,26,12,13",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(53) / conference parameters"
+          },
+          "right": {
+            "node": "srg:53,26,12,13",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(53) / conference parameters"
+          }
+        },
+        {
+          "case": "(55, 18, 9, 4)",
+          "left": {
+            "node": "srg:55,18,9,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(11)"
+          },
+          "right": {
+            "node": "srg:55,36,21,28",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (55, 18, 9, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(56, 22, 3, 12)",
+          "left": {
+            "node": "srg:56,22,3,12",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:56,33,22,15",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (56, 22, 3, 12) in Brouwer table"
+          }
+        },
+        {
+          "case": "(57, 24, 11, 9)",
+          "left": {
+            "node": "srg:57,24,11,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,3,19)"
+          },
+          "right": {
+            "node": "srg:57,32,16,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (57, 24, 11, 9) in Brouwer table"
+          }
+        },
+        {
+          "case": "(57, 28, 13, 14)",
+          "left": {
+            "node": "srg:57,28,13,14",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:57,28,13,14",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "(61, 30, 14, 15)",
+          "left": {
+            "node": "srg:61,30,14,15",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(61) / conference parameters"
+          },
+          "right": {
+            "node": "srg:61,30,14,15",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(61) / conference parameters"
+          }
+        },
+        {
+          "case": "(63, 30, 13, 15)",
+          "left": {
+            "node": "srg:63,30,13,15",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (63, 32, 16, 16) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:63,32,16,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,4,28)"
+          }
+        },
+        {
+          "case": "(64, 14, 6, 2)",
+          "left": {
+            "node": "srg:64,14,6,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: 8^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:64,49,36,42",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (64, 14, 6, 2) in Brouwer table"
+          }
+        },
+        {
+          "case": "(64, 21, 8, 6)",
+          "left": {
+            "node": "srg:64,21,8,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: OA(8,3) / Latin-square graph parameters"
+          },
+          "right": {
+            "node": "srg:64,42,26,30",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (64, 21, 8, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "(64, 30, 18, 10)",
+          "left": {
+            "node": "srg:64,30,18,10",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:64,33,12,22",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (64, 30, 18, 10) in Brouwer table"
+          }
+        },
+        {
+          "case": "(66, 20, 10, 4)",
+          "left": {
+            "node": "srg:66,20,10,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(12)"
+          },
+          "right": {
+            "node": "srg:66,45,28,36",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (66, 20, 10, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(69, 34, 16, 17)",
+          "left": {
+            "node": "srg:69,34,16,17",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:69,34,16,17",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "(70, 27, 12, 9)",
+          "left": {
+            "node": "srg:70,27,12,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,3,21)"
+          },
+          "right": {
+            "node": "srg:70,42,23,28",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (70, 27, 12, 9) in Brouwer table"
+          }
+        },
+        {
+          "case": "(73, 36, 17, 18)",
+          "left": {
+            "node": "srg:73,36,17,18",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(73) / conference parameters"
+          },
+          "right": {
+            "node": "srg:73,36,17,18",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(73) / conference parameters"
+          }
+        },
+        {
+          "case": "(75, 32, 10, 16)",
+          "left": {
+            "node": "srg:75,32,10,16",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:75,42,25,21",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (75, 32, 10, 16) in Brouwer table"
+          }
+        },
+        {
+          "case": "(76, 21, 2, 7)",
+          "left": {
+            "node": "srg:76,21,2,7",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:76,54,39,36",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (76, 21, 2, 7) in Brouwer table"
+          }
+        },
+        {
+          "case": "(76, 30, 8, 14)",
+          "left": {
+            "node": "srg:76,30,8,14",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:76,45,28,24",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (76, 30, 8, 14) in Brouwer table"
+          }
+        },
+        {
+          "case": "(77, 38, 18, 19)",
+          "left": {
+            "node": "srg:77,38,18,19",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:77,38,18,19",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "(78, 22, 11, 4)",
+          "left": {
+            "node": "srg:78,22,11,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(13)"
+          },
+          "right": {
+            "node": "srg:78,55,36,45",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (78, 22, 11, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(81, 16, 7, 2)",
+          "left": {
+            "node": "srg:81,16,7,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: 9^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:81,64,49,56",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (81, 16, 7, 2) in Brouwer table"
+          }
+        },
+        {
+          "case": "(81, 24, 9, 6)",
+          "left": {
+            "node": "srg:81,24,9,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: OA(9,3) / Latin-square graph parameters"
+          },
+          "right": {
+            "node": "srg:81,56,37,42",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (81, 24, 9, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "(81, 40, 19, 20)",
+          "left": {
+            "node": "srg:81,40,19,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(81) / conference parameters"
+          },
+          "right": {
+            "node": "srg:81,40,19,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(81) / conference parameters"
+          }
+        },
+        {
+          "case": "(82, 36, 15, 16)",
+          "left": {
+            "node": "srg:82,36,15,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (82, 45, 24, 25) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:82,45,24,25",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,5,41)"
+          }
+        },
+        {
+          "case": "(89, 44, 21, 22)",
+          "left": {
+            "node": "srg:89,44,21,22",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(89) / conference parameters"
+          },
+          "right": {
+            "node": "srg:89,44,21,22",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(89) / conference parameters"
+          }
+        },
+        {
+          "case": "(91, 24, 12, 4)",
+          "left": {
+            "node": "srg:91,24,12,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(14)"
+          },
+          "right": {
+            "node": "srg:91,66,45,55",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (91, 24, 12, 4) in Brouwer table"
+          }
+        },
+        {
+          "case": "(93, 46, 22, 23)",
+          "left": {
+            "node": "srg:93,46,22,23",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:93,46,22,23",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "(95, 40, 12, 20)",
+          "left": {
+            "node": "srg:95,40,12,20",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:95,54,33,27",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (95, 40, 12, 20) in Brouwer table"
+          }
+        },
+        {
+          "case": "(96, 38, 10, 18)",
+          "left": {
+            "node": "srg:96,38,10,18",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:96,57,36,30",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (96, 38, 10, 18) in Brouwer table"
+          }
+        },
+        {
+          "case": "(96, 45, 24, 18)",
+          "left": {
+            "node": "srg:96,45,24,18",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: parameter set marked non-existent"
+          },
+          "right": {
+            "node": "srg:96,50,22,30",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (96, 45, 24, 18) in Brouwer table"
+          }
+        },
+        {
+          "case": "(97, 48, 23, 24)",
+          "left": {
+            "node": "srg:97,48,23,24",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(97) / conference parameters"
+          },
+          "right": {
+            "node": "srg:97,48,23,24",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(97) / conference parameters"
+          }
+        },
+        {
+          "case": "(99, 48, 22, 24)",
+          "left": {
+            "node": "srg:99,48,22,24",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (99, 50, 25, 25) in Brouwer table"
+          },
+          "right": {
+            "node": "srg:99,50,25,25",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,5,45)"
+          }
+        },
+        {
+          "case": "(100, 18, 8, 2)",
+          "left": {
+            "node": "srg:100,18,8,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: 10^2 / lattice (rook) graph parameters"
+          },
+          "right": {
+            "node": "srg:100,81,64,72",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (100, 18, 8, 2) in Brouwer table"
+          }
+        },
+        {
+          "case": "(100, 27, 10, 6)",
+          "left": {
+            "node": "srg:100,27,10,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: OA(10,3) / Latin-square graph parameters"
+          },
+          "right": {
+            "node": "srg:100,72,50,56",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (100, 27, 10, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "(100, 33, 14, 9)",
+          "left": {
+            "node": "srg:100,33,14,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,3,25)"
+          },
+          "right": {
+            "node": "srg:100,66,41,48",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Complementary row paired with (100, 33, 14, 9) in Brouwer table"
+          }
+        },
+        {
+          "case": "(111, 44, 19, 16)",
+          "left": {
+            "node": "srg:111,44,19,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Brouwer table: block graph of S(2,4,37)"
+          },
+          "right": {
+            "node": "srg:111,66,37,42",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Complementary row paired with (111, 44, 19, 16) in Brouwer table"
+          }
+        },
+        {
+          "case": "(117, 36, 15, 9)",
+          "left": {
+            "node": "srg:117,36,15,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Brouwer table: block graph of S(2,3,27)"
+          },
+          "right": {
+            "node": "srg:117,80,52,60",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Complementary row paired with (117, 36, 15, 9) in Brouwer table"
+          }
+        },
+        {
+          "case": "(130, 48, 20, 16)",
+          "left": {
+            "node": "srg:130,48,20,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Brouwer table: block graph of S(2,4,40)"
+          },
+          "right": {
+            "node": "srg:130,81,48,54",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Complementary row paired with (130, 48, 20, 16) in Brouwer table"
+          }
+        },
+        {
+          "case": "(155, 42, 17, 9)",
+          "left": {
+            "node": "srg:155,42,17,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,3,31)"
+          },
+          "right": {
+            "node": "srg:155,112,78,88",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Complementary row paired with (155, 42, 17, 9) in Brouwer table"
+          }
+        },
+        {
+          "case": "(176, 45, 18, 9)",
+          "left": {
+            "node": "srg:176,45,18,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,3,33)"
+          },
+          "right": {
+            "node": "srg:176,130,93,104",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Complementary row paired with (176, 45, 18, 9) in Brouwer table"
+          }
+        },
+        {
+          "case": "(183, 70, 29, 25)",
+          "left": {
+            "node": "srg:183,70,29,25",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,5,61)"
+          },
+          "right": {
+            "node": "srg:183,112,66,72",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Complementary row paired with (183, 70, 29, 25) in Brouwer table"
+          }
+        },
+        {
+          "case": "(196, 60, 23, 16)",
+          "left": {
+            "node": "srg:196,60,23,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,4,49)"
+          },
+          "right": {
+            "node": "srg:196,135,90,99",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Complementary row paired with (196, 60, 23, 16) in Brouwer table"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "symmetric-conference-iff-conference-srg",
+      "type": "EQUIVALENCE",
+      "tier": "published-proof",
+      "receipt": "Haemers--Parsaei Majd, Spectral symmetry in conference matrices, section 2: symmetric conference order 4m+2 iff SRG(4m+1,2m,m-1,m).",
+      "verified": true,
+      "overlap": 21,
+      "exists": 15,
+      "none": 6,
+      "oneSided": false,
+      "agreements": [
+        {
+          "case": "q=5",
+          "left": {
+            "node": "conference:6",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(5); C*C^T=5I checked exactly"
+          },
+          "right": {
+            "node": "srg:5,2,0,1",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(5) / conference parameters"
+          }
+        },
+        {
+          "case": "q=9",
+          "left": {
+            "node": "conference:10",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(9); C*C^T=9I checked exactly"
+          },
+          "right": {
+            "node": "srg:9,4,1,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 3^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "q=13",
+          "left": {
+            "node": "conference:14",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(13); C*C^T=13I checked exactly"
+          },
+          "right": {
+            "node": "srg:13,6,2,3",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(13) / conference parameters"
+          }
+        },
+        {
+          "case": "q=17",
+          "left": {
+            "node": "conference:18",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(17); C*C^T=17I checked exactly"
+          },
+          "right": {
+            "node": "srg:17,8,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(17) / conference parameters"
+          }
+        },
+        {
+          "case": "q=25",
+          "left": {
+            "node": "conference:26",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(25); C*C^T=25I checked exactly"
+          },
+          "right": {
+            "node": "srg:25,12,5,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(5,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "q=29",
+          "left": {
+            "node": "conference:30",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(29); C*C^T=29I checked exactly"
+          },
+          "right": {
+            "node": "srg:29,14,6,7",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(29) / conference parameters"
+          }
+        },
+        {
+          "case": "q=37",
+          "left": {
+            "node": "conference:38",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(37); C*C^T=37I checked exactly"
+          },
+          "right": {
+            "node": "srg:37,18,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(37) / conference parameters"
+          }
+        },
+        {
+          "case": "q=41",
+          "left": {
+            "node": "conference:42",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(41); C*C^T=41I checked exactly"
+          },
+          "right": {
+            "node": "srg:41,20,9,10",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(41) / conference parameters"
+          }
+        },
+        {
+          "case": "q=49",
+          "left": {
+            "node": "conference:50",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(49); C*C^T=49I checked exactly"
+          },
+          "right": {
+            "node": "srg:49,24,11,12",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(49) / conference parameters"
+          }
+        },
+        {
+          "case": "q=53",
+          "left": {
+            "node": "conference:54",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(53); C*C^T=53I checked exactly"
+          },
+          "right": {
+            "node": "srg:53,26,12,13",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(53) / conference parameters"
+          }
+        },
+        {
+          "case": "q=61",
+          "left": {
+            "node": "conference:62",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(61); C*C^T=61I checked exactly"
+          },
+          "right": {
+            "node": "srg:61,30,14,15",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(61) / conference parameters"
+          }
+        },
+        {
+          "case": "q=73",
+          "left": {
+            "node": "conference:74",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(73); C*C^T=73I checked exactly"
+          },
+          "right": {
+            "node": "srg:73,36,17,18",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(73) / conference parameters"
+          }
+        },
+        {
+          "case": "q=81",
+          "left": {
+            "node": "conference:82",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(81); C*C^T=81I checked exactly"
+          },
+          "right": {
+            "node": "srg:81,40,19,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(81) / conference parameters"
+          }
+        },
+        {
+          "case": "q=89",
+          "left": {
+            "node": "conference:90",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(89); C*C^T=89I checked exactly"
+          },
+          "right": {
+            "node": "srg:89,44,21,22",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(89) / conference parameters"
+          }
+        },
+        {
+          "case": "q=97",
+          "left": {
+            "node": "conference:98",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(97); C*C^T=97I checked exactly"
+          },
+          "right": {
+            "node": "srg:97,48,23,24",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(97) / conference parameters"
+          }
+        },
+        {
+          "case": "q=21",
+          "left": {
+            "node": "conference:22",
+            "status": "NONE",
+            "evidence": "exact obstruction: 21 is not a sum of two squares"
+          },
+          "right": {
+            "node": "srg:21,10,4,5",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "q=33",
+          "left": {
+            "node": "conference:34",
+            "status": "NONE",
+            "evidence": "exact obstruction: 33 is not a sum of two squares"
+          },
+          "right": {
+            "node": "srg:33,16,7,8",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "q=57",
+          "left": {
+            "node": "conference:58",
+            "status": "NONE",
+            "evidence": "exact obstruction: 57 is not a sum of two squares"
+          },
+          "right": {
+            "node": "srg:57,28,13,14",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "q=69",
+          "left": {
+            "node": "conference:70",
+            "status": "NONE",
+            "evidence": "exact obstruction: 69 is not a sum of two squares"
+          },
+          "right": {
+            "node": "srg:69,34,16,17",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "q=77",
+          "left": {
+            "node": "conference:78",
+            "status": "NONE",
+            "evidence": "exact obstruction: 77 is not a sum of two squares"
+          },
+          "right": {
+            "node": "srg:77,38,18,19",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        },
+        {
+          "case": "q=93",
+          "left": {
+            "node": "conference:94",
+            "status": "NONE",
+            "evidence": "exact obstruction: 93 is not a sum of two squares"
+          },
+          "right": {
+            "node": "srg:93,46,22,23",
+            "status": "NONE",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: conference parameter set marked non-existent"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "paley-graph-is-conference-srg",
+      "type": "IMPLICATION",
+      "tier": "published-proof",
+      "receipt": "Paley construction over GF(q), q prime power and q=1 mod 4; graph is built and its exact SRG parameters are recomputed.",
+      "verified": true,
+      "overlap": 15,
+      "exists": 15,
+      "none": 0,
+      "oneSided": true,
+      "agreements": [
+        {
+          "case": "q=5",
+          "left": {
+            "node": "paley:5",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (5, 2, 0, 1)"
+          },
+          "right": {
+            "node": "srg:5,2,0,1",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(5) / conference parameters"
+          }
+        },
+        {
+          "case": "q=9",
+          "left": {
+            "node": "paley:9",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (9, 4, 1, 2)"
+          },
+          "right": {
+            "node": "srg:9,4,1,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 3^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "q=13",
+          "left": {
+            "node": "paley:13",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (13, 6, 2, 3)"
+          },
+          "right": {
+            "node": "srg:13,6,2,3",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(13) / conference parameters"
+          }
+        },
+        {
+          "case": "q=17",
+          "left": {
+            "node": "paley:17",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (17, 8, 3, 4)"
+          },
+          "right": {
+            "node": "srg:17,8,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(17) / conference parameters"
+          }
+        },
+        {
+          "case": "q=25",
+          "left": {
+            "node": "paley:25",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (25, 12, 5, 6)"
+          },
+          "right": {
+            "node": "srg:25,12,5,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(5,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "q=29",
+          "left": {
+            "node": "paley:29",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (29, 14, 6, 7)"
+          },
+          "right": {
+            "node": "srg:29,14,6,7",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(29) / conference parameters"
+          }
+        },
+        {
+          "case": "q=37",
+          "left": {
+            "node": "paley:37",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (37, 18, 8, 9)"
+          },
+          "right": {
+            "node": "srg:37,18,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(37) / conference parameters"
+          }
+        },
+        {
+          "case": "q=41",
+          "left": {
+            "node": "paley:41",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (41, 20, 9, 10)"
+          },
+          "right": {
+            "node": "srg:41,20,9,10",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(41) / conference parameters"
+          }
+        },
+        {
+          "case": "q=49",
+          "left": {
+            "node": "paley:49",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (49, 24, 11, 12)"
+          },
+          "right": {
+            "node": "srg:49,24,11,12",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Paley(49) / conference parameters"
+          }
+        },
+        {
+          "case": "q=53",
+          "left": {
+            "node": "paley:53",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (53, 26, 12, 13)"
+          },
+          "right": {
+            "node": "srg:53,26,12,13",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(53) / conference parameters"
+          }
+        },
+        {
+          "case": "q=61",
+          "left": {
+            "node": "paley:61",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (61, 30, 14, 15)"
+          },
+          "right": {
+            "node": "srg:61,30,14,15",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(61) / conference parameters"
+          }
+        },
+        {
+          "case": "q=73",
+          "left": {
+            "node": "paley:73",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (73, 36, 17, 18)"
+          },
+          "right": {
+            "node": "srg:73,36,17,18",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(73) / conference parameters"
+          }
+        },
+        {
+          "case": "q=81",
+          "left": {
+            "node": "paley:81",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (81, 40, 19, 20)"
+          },
+          "right": {
+            "node": "srg:81,40,19,20",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(81) / conference parameters"
+          }
+        },
+        {
+          "case": "q=89",
+          "left": {
+            "node": "paley:89",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (89, 44, 21, 22)"
+          },
+          "right": {
+            "node": "srg:89,44,21,22",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(89) / conference parameters"
+          }
+        },
+        {
+          "case": "q=97",
+          "left": {
+            "node": "paley:97",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (97, 48, 23, 24)"
+          },
+          "right": {
+            "node": "srg:97,48,23,24",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Paley(97) / conference parameters"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "symmetric-conference-gives-hadamard-double-order",
+      "type": "IMPLICATION",
+      "tier": "published-proof",
+      "receipt": "Block construction H=[[C+I,C-I],[C-I,-C-I]]; entries and HH^T=2nI are checked exactly.",
+      "verified": true,
+      "overlap": 15,
+      "exists": 15,
+      "none": 0,
+      "oneSided": true,
+      "agreements": [
+        {
+          "case": "q=5",
+          "left": {
+            "node": "conference:6",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(5); C*C^T=5I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:12",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 6; HH^T=12I checked"
+          }
+        },
+        {
+          "case": "q=9",
+          "left": {
+            "node": "conference:10",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(9); C*C^T=9I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:20",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 10; HH^T=20I checked"
+          }
+        },
+        {
+          "case": "q=13",
+          "left": {
+            "node": "conference:14",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(13); C*C^T=13I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:28",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 14; HH^T=28I checked"
+          }
+        },
+        {
+          "case": "q=17",
+          "left": {
+            "node": "conference:18",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(17); C*C^T=17I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:36",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 18; HH^T=36I checked"
+          }
+        },
+        {
+          "case": "q=25",
+          "left": {
+            "node": "conference:26",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(25); C*C^T=25I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:52",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 26; HH^T=52I checked"
+          }
+        },
+        {
+          "case": "q=29",
+          "left": {
+            "node": "conference:30",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(29); C*C^T=29I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:60",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 30; HH^T=60I checked"
+          }
+        },
+        {
+          "case": "q=37",
+          "left": {
+            "node": "conference:38",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(37); C*C^T=37I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:76",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 38; HH^T=76I checked"
+          }
+        },
+        {
+          "case": "q=41",
+          "left": {
+            "node": "conference:42",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(41); C*C^T=41I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:84",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 42; HH^T=84I checked"
+          }
+        },
+        {
+          "case": "q=49",
+          "left": {
+            "node": "conference:50",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(49); C*C^T=49I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:100",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 50; HH^T=100I checked"
+          }
+        },
+        {
+          "case": "q=53",
+          "left": {
+            "node": "conference:54",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(53); C*C^T=53I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:108",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 54; HH^T=108I checked"
+          }
+        },
+        {
+          "case": "q=61",
+          "left": {
+            "node": "conference:62",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(61); C*C^T=61I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:124",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 62; HH^T=124I checked"
+          }
+        },
+        {
+          "case": "q=73",
+          "left": {
+            "node": "conference:74",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(73); C*C^T=73I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:148",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 74; HH^T=148I checked"
+          }
+        },
+        {
+          "case": "q=81",
+          "left": {
+            "node": "conference:82",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(81); C*C^T=81I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:164",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 82; HH^T=164I checked"
+          }
+        },
+        {
+          "case": "q=89",
+          "left": {
+            "node": "conference:90",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(89); C*C^T=89I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:180",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 90; HH^T=180I checked"
+          }
+        },
+        {
+          "case": "q=97",
+          "left": {
+            "node": "conference:98",
+            "status": "EXISTS",
+            "evidence": "explicit Paley conference matrix over GF(97); C*C^T=97I checked exactly"
+          },
+          "right": {
+            "node": "hadamard:196",
+            "status": "EXISTS",
+            "evidence": "explicit 2x2 block construction from conference order 98; HH^T=196I checked"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "triangular-line-graph-is-srg",
+      "type": "IMPLICATION",
+      "tier": "published-proof",
+      "receipt": "Line graph of K_n; explicit graph construction and exact common-neighbour count.",
+      "verified": true,
+      "overlap": 10,
+      "exists": 10,
+      "none": 0,
+      "oneSided": true,
+      "agreements": [
+        {
+          "case": "n=5",
+          "left": {
+            "node": "triangular:5",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (10, 6, 3, 4)"
+          },
+          "right": {
+            "node": "srg:10,6,3,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(5)"
+          }
+        },
+        {
+          "case": "n=6",
+          "left": {
+            "node": "triangular:6",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (15, 8, 4, 4)"
+          },
+          "right": {
+            "node": "srg:15,8,4,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(6)"
+          }
+        },
+        {
+          "case": "n=7",
+          "left": {
+            "node": "triangular:7",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (21, 10, 5, 4)"
+          },
+          "right": {
+            "node": "srg:21,10,5,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(7)"
+          }
+        },
+        {
+          "case": "n=8",
+          "left": {
+            "node": "triangular:8",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (28, 12, 6, 4)"
+          },
+          "right": {
+            "node": "srg:28,12,6,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(8)"
+          }
+        },
+        {
+          "case": "n=9",
+          "left": {
+            "node": "triangular:9",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (36, 14, 7, 4)"
+          },
+          "right": {
+            "node": "srg:36,14,7,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(9)"
+          }
+        },
+        {
+          "case": "n=10",
+          "left": {
+            "node": "triangular:10",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (45, 16, 8, 4)"
+          },
+          "right": {
+            "node": "srg:45,16,8,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: Triangular graph T(10)"
+          }
+        },
+        {
+          "case": "n=11",
+          "left": {
+            "node": "triangular:11",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (55, 18, 9, 4)"
+          },
+          "right": {
+            "node": "srg:55,18,9,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(11)"
+          }
+        },
+        {
+          "case": "n=12",
+          "left": {
+            "node": "triangular:12",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (66, 20, 10, 4)"
+          },
+          "right": {
+            "node": "srg:66,20,10,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(12)"
+          }
+        },
+        {
+          "case": "n=13",
+          "left": {
+            "node": "triangular:13",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (78, 22, 11, 4)"
+          },
+          "right": {
+            "node": "srg:78,22,11,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(13)"
+          }
+        },
+        {
+          "case": "n=14",
+          "left": {
+            "node": "triangular:14",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (91, 24, 12, 4)"
+          },
+          "right": {
+            "node": "srg:91,24,12,4",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: Triangular graph T(14)"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "lattice-rook-graph-is-srg",
+      "type": "IMPLICATION",
+      "tier": "published-proof",
+      "receipt": "Rook graph on an n by n grid; explicit graph construction and exact common-neighbour count.",
+      "verified": true,
+      "overlap": 8,
+      "exists": 8,
+      "none": 0,
+      "oneSided": true,
+      "agreements": [
+        {
+          "case": "n=3",
+          "left": {
+            "node": "lattice:3",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (9, 4, 1, 2)"
+          },
+          "right": {
+            "node": "srg:9,4,1,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 3^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "n=4",
+          "left": {
+            "node": "lattice:4",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (16, 6, 2, 2)"
+          },
+          "right": {
+            "node": "srg:16,6,2,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Complementary row paired with (16, 9, 4, 6) in Brouwer table"
+          }
+        },
+        {
+          "case": "n=5",
+          "left": {
+            "node": "lattice:5",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (25, 8, 3, 2)"
+          },
+          "right": {
+            "node": "srg:25,8,3,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 5^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "n=6",
+          "left": {
+            "node": "lattice:6",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (36, 10, 4, 2)"
+          },
+          "right": {
+            "node": "srg:36,10,4,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 6^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "n=7",
+          "left": {
+            "node": "lattice:7",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (49, 12, 5, 2)"
+          },
+          "right": {
+            "node": "srg:49,12,5,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: 7^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "n=8",
+          "left": {
+            "node": "lattice:8",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (64, 14, 6, 2)"
+          },
+          "right": {
+            "node": "srg:64,14,6,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: 8^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "n=9",
+          "left": {
+            "node": "lattice:9",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (81, 16, 7, 2)"
+          },
+          "right": {
+            "node": "srg:81,16,7,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: 9^2 / lattice (rook) graph parameters"
+          }
+        },
+        {
+          "case": "n=10",
+          "left": {
+            "node": "lattice:10",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (100, 18, 8, 2)"
+          },
+          "right": {
+            "node": "srg:100,18,8,2",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: 10^2 / lattice (rook) graph parameters"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "cyclic-latin-square-graph-is-srg",
+      "type": "IMPLICATION",
+      "tier": "published-proof",
+      "receipt": "Graph from rows, columns, and symbols of L(r,c)=r+c mod n; constructed and checked exactly.",
+      "verified": true,
+      "overlap": 7,
+      "exists": 7,
+      "none": 0,
+      "oneSided": true,
+      "agreements": [
+        {
+          "case": "n=4",
+          "left": {
+            "node": "latin-square:4",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (16, 9, 4, 6)"
+          },
+          "right": {
+            "node": "srg:16,9,4,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(4,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "n=5",
+          "left": {
+            "node": "latin-square:5",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (25, 12, 5, 6)"
+          },
+          "right": {
+            "node": "srg:25,12,5,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(5,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "n=6",
+          "left": {
+            "node": "latin-square:6",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (36, 15, 6, 6)"
+          },
+          "right": {
+            "node": "srg:36,15,6,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(6,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "n=7",
+          "left": {
+            "node": "latin-square:7",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (49, 18, 7, 6)"
+          },
+          "right": {
+            "node": "srg:49,18,7,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: OA(7,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "n=8",
+          "left": {
+            "node": "latin-square:8",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (64, 21, 8, 6)"
+          },
+          "right": {
+            "node": "srg:64,21,8,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: OA(8,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "n=9",
+          "left": {
+            "node": "latin-square:9",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (81, 24, 9, 6)"
+          },
+          "right": {
+            "node": "srg:81,24,9,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: OA(9,3) / Latin-square graph parameters"
+          }
+        },
+        {
+          "case": "n=10",
+          "left": {
+            "node": "latin-square:10",
+            "status": "EXISTS",
+            "evidence": "explicit graph check: actual SRG parameters (100, 27, 10, 6)"
+          },
+          "right": {
+            "node": "srg:100,27,10,6",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: OA(10,3) / Latin-square graph parameters"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    },
+    {
+      "name": "steiner-2-design-block-graph-is-srg",
+      "type": "IMPLICATION",
+      "tier": "published-proof",
+      "receipt": "Brouwer--Van Maldeghem, Strongly regular graphs, section 8.5.4A; includes block sizes 3,4,5 and extends the handoff beyond STS-only cases.",
+      "verified": true,
+      "overlap": 16,
+      "exists": 16,
+      "none": 0,
+      "oneSided": true,
+      "agreements": [
+        {
+          "case": "m=3,u=13",
+          "left": {
+            "node": "steiner:2,3,13",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:26,15,8,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: block graph of S(2,3,13)"
+          }
+        },
+        {
+          "case": "m=3,u=15",
+          "left": {
+            "node": "steiner:2,3,15",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:35,18,9,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: block graph of S(2,3,15)"
+          }
+        },
+        {
+          "case": "m=3,u=19",
+          "left": {
+            "node": "steiner:2,3,19",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:57,24,11,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,3,19)"
+          }
+        },
+        {
+          "case": "m=3,u=21",
+          "left": {
+            "node": "steiner:2,3,21",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:70,27,12,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,3,21)"
+          }
+        },
+        {
+          "case": "m=3,u=25",
+          "left": {
+            "node": "steiner:2,3,25",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:100,33,14,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,3,25)"
+          }
+        },
+        {
+          "case": "m=3,u=27",
+          "left": {
+            "node": "steiner:2,3,27",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:117,36,15,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Brouwer table: block graph of S(2,3,27)"
+          }
+        },
+        {
+          "case": "m=3,u=31",
+          "left": {
+            "node": "steiner:2,3,31",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:155,42,17,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,3,31)"
+          }
+        },
+        {
+          "case": "m=3,u=33",
+          "left": {
+            "node": "steiner:2,3,33",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,3,u) exists iff u == 1 or 3 mod 6"
+          },
+          "right": {
+            "node": "srg:176,45,18,9",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,3,33)"
+          }
+        },
+        {
+          "case": "m=4,u=25",
+          "left": {
+            "node": "steiner:2,4,25",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,4,u) exists iff u == 1 or 4 mod 12"
+          },
+          "right": {
+            "node": "srg:50,28,15,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html :: Brouwer table: block graph of S(2,4,25)"
+          }
+        },
+        {
+          "case": "m=4,u=28",
+          "left": {
+            "node": "steiner:2,4,28",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,4,u) exists iff u == 1 or 4 mod 12"
+          },
+          "right": {
+            "node": "srg:63,32,16,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,4,28)"
+          }
+        },
+        {
+          "case": "m=4,u=37",
+          "left": {
+            "node": "steiner:2,4,37",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,4,u) exists iff u == 1 or 4 mod 12"
+          },
+          "right": {
+            "node": "srg:111,44,19,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Brouwer table: block graph of S(2,4,37)"
+          }
+        },
+        {
+          "case": "m=4,u=40",
+          "left": {
+            "node": "steiner:2,4,40",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,4,u) exists iff u == 1 or 4 mod 12"
+          },
+          "right": {
+            "node": "srg:130,48,20,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab101-150.html :: Brouwer table: block graph of S(2,4,40)"
+          }
+        },
+        {
+          "case": "m=4,u=49",
+          "left": {
+            "node": "steiner:2,4,49",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,4,u) exists iff u == 1 or 4 mod 12"
+          },
+          "right": {
+            "node": "srg:196,60,23,16",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,4,49)"
+          }
+        },
+        {
+          "case": "m=5,u=41",
+          "left": {
+            "node": "steiner:2,5,41",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,5,u) exists iff u == 1 or 5 mod 20"
+          },
+          "right": {
+            "node": "srg:82,45,24,25",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,5,41)"
+          }
+        },
+        {
+          "case": "m=5,u=45",
+          "left": {
+            "node": "steiner:2,5,45",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,5,u) exists iff u == 1 or 5 mod 20"
+          },
+          "right": {
+            "node": "srg:99,50,25,25",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html :: Brouwer table: block graph of S(2,5,45)"
+          }
+        },
+        {
+          "case": "m=5,u=61",
+          "left": {
+            "node": "steiner:2,5,61",
+            "status": "EXISTS",
+            "evidence": "Brouwer--Van Maldeghem 8.5.4A: S(2,5,u) exists iff u == 1 or 5 mod 20"
+          },
+          "right": {
+            "node": "srg:183,70,29,25",
+            "status": "EXISTS",
+            "evidence": "https://aeb.win.tue.nl/graphs/srg/srgtab151-200.html :: Brouwer table: block graph of S(2,5,61)"
+          }
+        }
+      ],
+      "disagreements": [],
+      "undecided": [],
+      "reason": "verified"
+    }
+  ],
+  "verifiedCount": 8,
+  "rejectedCount": 0,
+  "edgeCount": 141
+}

@@ -1,0 +1,10 @@
+[PASS] paley_13_parameters: (13, 6, 2, 3)
+[PASS] paley_13_brouwer_exists: {'params': [13, 6, 2, 3], 'status': 'EXISTS', 'source_url': 'https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html', 'source_note': 'Brouwer table: Paley(13) / conference parameters'}
+[PASS] paley_13_edge_present: paley:13 -> srg:13,6,2,3
+[PASS] conference_22_obstruction: 21 is not a sum of two squares
+[PASS] conference_22_srg_brouwer_none: {'params': [21, 10, 4, 5], 'status': 'NONE', 'source_url': 'https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html', 'source_note': 'Brouwer table: conference parameter set marked non-existent'}
+[PASS] conference_22_none_edge_present: conference:22 <-> srg:21,10,4,5
+[PASS] steiner_2_4_25_parameters: (50, 28, 15, 16)
+[PASS] steiner_2_4_25_brouwer_exists: {'params': [50, 28, 15, 16], 'status': 'EXISTS', 'source_url': 'https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html', 'source_note': 'Brouwer table: block graph of S(2,4,25)'}
+[PASS] steiner_2_4_25_edge_present: steiner:2,4,25 -> srg:50,28,15,16
+{"ok": true, "method": "independent-srg-edge-check", "checks": 9}

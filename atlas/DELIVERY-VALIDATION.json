@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "kind": "graph-bridge-delivery-validation",
+  "transportsVerified": 8,
+  "transportsRejected": 0,
+  "caseComparisons": 162,
+  "edges": 141,
+  "distinctEdges": 141,
+  "selfEdges": 0,
+  "groundTruthRows": 119,
+  "existsRows": 91,
+  "noneRows": 28,
+  "connectivityAfterCount": "UNRESOLVED_WITHOUT_LIVE_DB",
+  "manifestedFiles": 23
+}

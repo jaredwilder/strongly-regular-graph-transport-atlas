@@ -1,0 +1,30 @@
+{
+  "ok": true,
+  "method": "graph-bridge-delivery-selftests",
+  "results": [
+    {
+      "tool": "srg_transports.py",
+      "ok": true,
+      "exit": 0,
+      "method": "srg-transports-verified",
+      "stdout_tail": "ent_formula_exact\n  [PASS] steiner_S2425_formula\n  [PASS] minimum_overlap_is_five\n  [PASS] all_proposed_transports_verify\n  [PASS] conference_verification_is_balanced\n  [PASS] false_transport_refused\n  [PASS] false_transport_has_six_disagreements\nground-truth records: 119\nMIN_OVERLAP: 5\n[VERIFIED] srg-complement: overlap=70 (53 EXISTS/17 NONE), disagreements=0\n[VERIFIED] symmetric-conference-iff-conference-srg: overlap=21 (15 EXISTS/6 NONE), disagreements=0\n[VERIFIED] paley-graph-is-conference-srg: overlap=15 (15 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]\n[VERIFIED] symmetric-conference-gives-hadamard-double-order: overlap=15 (15 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]\n[VERIFIED] triangular-line-graph-is-srg: overlap=10 (10 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]\n[VERIFIED] lattice-rook-graph-is-srg: overlap=8 (8 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]\n[VERIFIED] cyclic-latin-square-graph-is-srg: overlap=7 (7 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]\n[VERIFIED] steiner-2-design-block-graph-is-srg: overlap=16 (16 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]\nedges emitted: 141\n{\"edges\": 141, \"method\": \"srg-transports-verified\", \"ok\": true, \"rejected\": 0, \"verified\": 8}\n",
+      "stderr_tail": ""
+    },
+    {
+      "tool": "independent_check.py",
+      "ok": true,
+      "exit": 0,
+      "method": "independent-srg-edge-check",
+      "stdout_tail": "[PASS] paley_13_parameters: (13, 6, 2, 3)\n[PASS] paley_13_brouwer_exists: {'params': [13, 6, 2, 3], 'status': 'EXISTS', 'source_url': 'https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html', 'source_note': 'Brouwer table: Paley(13) / conference parameters'}\n[PASS] paley_13_edge_present: paley:13 -> srg:13,6,2,3\n[PASS] conference_22_obstruction: 21 is not a sum of two squares\n[PASS] conference_22_srg_brouwer_none: {'params': [21, 10, 4, 5], 'status': 'NONE', 'source_url': 'https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html', 'source_note': 'Brouwer table: conference parameter set marked non-existent'}\n[PASS] conference_22_none_edge_present: conference:22 <-> srg:21,10,4,5\n[PASS] steiner_2_4_25_parameters: (50, 28, 15, 16)\n[PASS] steiner_2_4_25_brouwer_exists: {'params': [50, 28, 15, 16], 'status': 'EXISTS', 'source_url': 'https://aeb.win.tue.nl/graphs/srg/srgtab1-50.html', 'source_note': 'Brouwer table: block graph of S(2,4,25)'}\n[PASS] steiner_2_4_25_edge_present: steiner:2,4,25 -> srg:50,28,15,16\n{\"ok\": true, \"method\": \"independent-srg-edge-check\", \"checks\": 9}\n",
+      "stderr_tail": ""
+    },
+    {
+      "tool": "connectivity_impact.py",
+      "ok": true,
+      "exit": 0,
+      "method": "connectivity-impact-selftest",
+      "stdout_tail": "[PASS] two_blades_move\n[PASS] two_components_merge\n[PASS] analogy_not_composable\n[PASS] new_bridge_node_counted\n[PASS] original_blade_count\n{\"ok\": true, \"method\": \"connectivity-impact-selftest\", \"checks\": 5}\n",
+      "stderr_tail": ""
+    }
+  ]
+}

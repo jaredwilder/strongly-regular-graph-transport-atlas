@@ -1,0 +1,30 @@
+  [PASS] gf9_nonzero_closed
+  [PASS] gf9_distributive_sample
+  [PASS] paley_9_exact
+  [PASS] paley_13_exact
+  [PASS] conference_6_exact
+  [PASS] conference_6_to_srg_5
+  [PASS] conference_22_refuted_by_sum_two_squares
+  [PASS] conference_6_to_hadamard_12
+  [PASS] triangular_T5_exact
+  [PASS] lattice_L4_exact
+  [PASS] latin_square_LS4_exact
+  [PASS] complement_formula_exact
+  [PASS] steiner_S2425_formula
+  [PASS] minimum_overlap_is_five
+  [PASS] all_proposed_transports_verify
+  [PASS] conference_verification_is_balanced
+  [PASS] false_transport_refused
+  [PASS] false_transport_has_six_disagreements
+ground-truth records: 119
+MIN_OVERLAP: 5
+[VERIFIED] srg-complement: overlap=70 (53 EXISTS/17 NONE), disagreements=0
+[VERIFIED] symmetric-conference-iff-conference-srg: overlap=21 (15 EXISTS/6 NONE), disagreements=0
+[VERIFIED] paley-graph-is-conference-srg: overlap=15 (15 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]
+[VERIFIED] symmetric-conference-gives-hadamard-double-order: overlap=15 (15 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]
+[VERIFIED] triangular-line-graph-is-srg: overlap=10 (10 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]
+[VERIFIED] lattice-rook-graph-is-srg: overlap=8 (8 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]
+[VERIFIED] cyclic-latin-square-graph-is-srg: overlap=7 (7 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]
+[VERIFIED] steiner-2-design-block-graph-is-srg: overlap=16 (16 EXISTS/0 NONE), disagreements=0 [ONE-SIDED]
+edges emitted: 141
+{"edges": 141, "method": "srg-transports-verified", "ok": true, "rejected": 0, "verified": 8}

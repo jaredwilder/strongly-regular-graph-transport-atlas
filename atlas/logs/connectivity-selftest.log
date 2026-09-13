@@ -1,0 +1,6 @@
+[PASS] two_blades_move
+[PASS] two_components_merge
+[PASS] analogy_not_composable
+[PASS] new_bridge_node_counted
+[PASS] original_blade_count
+{"ok": true, "method": "connectivity-impact-selftest", "checks": 5}

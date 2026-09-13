@@ -1,34 +1,24 @@
-# Exact source recovery checklist
+# Exact source recovery — completed 2026-09-13
 
-The canonical mathematical program is now public. The exact source payload still needs reconstruction.
+The original `graph-bridge-real-delivery.zip` is recovered into [atlas/](atlas/README.md). All 25 files preserve original bytes; all 24 entries in its historical manifest match. The [recovery manifest](verification/source-recovery.json) records original members and hashes.
 
-## Required objects
+## Recovered and checked
 
-- [ ] complete 119-row strongly-regular parameter table;
-- [ ] exact row-level 91 existence / 28 nonexistence classification;
-- [ ] complete 141-edge transport ledger;
-- [ ] exact definitions/names of all eight transport types;
-- [ ] 211-endpoint registry;
-- [ ] rejected/type-mismatched edge ledger;
-- [ ] per-edge proof/verifier/citation authority;
-- [ ] original source archive/member hashes;
-- [ ] replay script for transport composition;
-- [ ] Brouwer-table version/date or frozen source reference used by the original atlas.
+- [x] Complete 119-row table with exact 91 existence / 28 nonexistence partition.
+- [x] Complete 141-edge ledger and eight transport definitions.
+- [x] 211-endpoint index derived from actual edge `from` / `to` fields.
+- [x] Recorded case agreements, disagreements, evidence and scope.
+- [x] Original source, audit, logs and manifest.
+- [x] Bundled transport checker, separate finite checker and synthetic connectivity self-test: three passing scripts.
 
-## Recovery protocol
+## Remaining authority work
 
-For each candidate recovered source object:
+- [ ] Independently establish the frozen Brouwer-table version/date and audit external catalogue dependencies.
+- [ ] Resolve connectivity with the actual live database; the replay uses a synthetic fixture.
+- [ ] Review universal transport statements beyond the finite cases, including six one-sided positive-case checks.
 
-1. preserve original bytes;
-2. compute SHA-256 before normalization;
-3. identify source archive and member path;
-4. compare counts against `119 / 91 / 28 / 141 / 8 / 211`;
-5. run semantic type checks before transport composition;
-6. retain rejected edges and conflicts as first-class records;
-7. never infer a missing row from complement symmetry unless the source itself records that row or the derived row is explicitly labeled as a new derivation;
-8. separate catalogue dependence from independently proved nonexistence/existence;
-9. publish a machine-readable manifest and a human-readable atlas together.
+Zero recorded disagreements describes finite checks. The historical typing audit is preserved; no missing rejected-edge ledger is invented from its prose.
 
-## Acceptance gate
+The historical delivery summary claims 23 manifested files, while the manifest contains 24 entries and the archive contains 25 files including the manifest. Original bytes are unchanged.
 
-The exact recovery is complete only when the reconstructed row/edge payload reproduces the source-level counts and every public summary statement in this repository can be traced to an exact row, proof, verifier, or external dependency.
+Run `python verification/verify_release.py --replay`. The dated [replay receipt](verification/replay-2026-09-13.json) records arguments, exits and outputs.

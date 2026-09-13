@@ -1,0 +1,4 @@
+[PASS] srg_transports.py: srg-transports-verified
+[PASS] independent_check.py: independent-srg-edge-check
+[PASS] connectivity_impact.py: connectivity-impact-selftest
+{"ok": true, "method": "graph-bridge-delivery-selftests", "passed": 3, "total": 3}

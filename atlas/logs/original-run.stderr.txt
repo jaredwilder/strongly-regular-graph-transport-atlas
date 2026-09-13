@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/mnt/data/graph_bridge_real/codex-handoff-graph-bridge/reference/srg_transports.py", line 153, in <module>
+    ok, checks = selftest()
+                 ~~~~~~~~^^
+  File "/mnt/data/graph_bridge_real/codex-handoff-graph-bridge/reference/srg_transports.py", line 142, in selftest
+    srg = _srg()
+  File "/mnt/data/graph_bridge_real/codex-handoff-graph-bridge/reference/srg_transports.py", line 43, in _srg
+    con = sqlite3.connect(DB)
+sqlite3.OperationalError: unable to open database file

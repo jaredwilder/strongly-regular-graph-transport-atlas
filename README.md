@@ -1,149 +1,52 @@
 # Strongly Regular Graph Transport Atlas
 
 **Author:** Jared Wilder  
-**Canonical public subject home created:** 2026-09-13  
-**Status:** recovered mathematical program; exact row-level source recovery still in progress
+**Status:** original source package recovered; bundled checks replayed on 2026-09-13.
 
-This repository is the focused public home for a strongly-regular-graph parameter and transport program that was previously buried inside the archive-mining release `mathematics-under-the-wrong-filename`.
+This repository contains a finite strongly regular graph parameter atlas and typed constructions between graph, design and matrix existence statements. Exact data, transport definitions and checks are available alongside the historical audits.
 
-The source program was found under the non-mathematical archive name:
+| Object | Contents |
+|---|---|
+| [Parameter atlas](atlas/brouwer-ground-truth.json) | 119 distinct `(v,k,lambda,mu)` rows: 91 `EXISTS`, 28 `NONE` |
+| [Transport edges](atlas/verified-edges.jsonl) | 141 distinct typed edges, with rule and evidence fields |
+| [Transport report](atlas/verification-output.json) | Eight transport definitions; 162 recorded case comparisons and zero recorded disagreements |
+| [Endpoint index](data/endpoints.json) | 211 endpoints derived from the actual `from` and `to` fields |
+| [Transport implementation](atlas/srg_transports.py) | Case-scoped construction, verification and edge generation |
+| [Independent checker](atlas/independent_check.py) | Separate finite checks for selected constructions and edge integrity |
 
-```text
-graph-bridge-real-delivery.zip
+All 25 source files match the recovered archive byte-for-byte. Its original SHA-256 manifest covers 24 files plus the manifest itself.
+
+## Reproduce
+
+Python 3.10 or later; standard library only. From the repository root:
+
+```sh
+python verification/verify_release.py
+python verification/verify_release.py --replay
 ```
 
-That filename is exactly why this work was easy to miss.
+The first command verifies source hashes, parameter rows, typed edges and endpoints. The second also runs the original transport checker, separate checker and synthetic connectivity self-test without overwriting original source receipts. All three passed in the [2026-09-13 replay](verification/replay-2026-09-13.json).
 
-## Recovered program scale
+## Mathematical scope
 
-The source audit reports:
+A strongly regular graph with parameters `(v,k,lambda,mu)` is `k`-regular on `v` vertices, with `lambda` common neighbours for adjacent pairs and `mu` for nonadjacent pairs. Its parameters satisfy `(v-k-1)mu = k(k-lambda-1)`; arithmetic feasibility alone does not establish existence.
 
-- **119 strongly regular graph parameter tuples** taken against Brouwer's parameter tables;
-- **91 existence entries**;
-- **28 nonexistence entries**;
-- **141 verified composable transport edges**;
-- **8 transport types**;
-- **211 typed endpoints**;
-- **0 reported disagreements** among the verified composable transports.
+The atlas is a specific 119-row subset attributed to Brouwer's tables. Original row references and statuses are preserved. This release does not independently establish every catalogue classification or a new historical novelty claim.
 
-This is a mathematical transport atlas, not merely a table scraper: it records when one mathematical object or existence statement can be carried into another object class through a typed construction, and it refuses transports whose source and target propositions are not actually equivalent.
+Six of the eight transport checks have only positive cases. The source marks them as one-sided. Successful finite replay is not a universal proof of every transport statement.
 
-## Strongly regular graph convention
+The original code audit and replacement package are retained separately. The proposition-type mismatch between `Matrix.IsHadamard` and `hadamard:n` remains documented in [TRANSPORT-TYPING.md](TRANSPORT-TYPING.md).
 
-A strongly regular graph with parameters
-
-\[
-(v,k,\lambda,\mu)
-\]
-
-is a `k`-regular graph on `v` vertices such that:
-
-- every adjacent pair has exactly `lambda` common neighbours;
-- every nonadjacent pair has exactly `mu` common neighbours.
-
-The standard feasibility identity is
-
-\[
-(v-k-1)\mu=k(k-\lambda-1).
-\]
-
-Satisfying the arithmetic feasibility conditions is **not** the same as existence. The atlas deliberately distinguishes parameter feasibility, known existence and known nonexistence.
-
-## Recovered nonexistence examples
-
-The buried source explicitly listed the following among its nonexistence side:
-
-```text
-(21,10,4,5)
-(28,9,0,4)
-(33,16,7,8)
-(49,16,3,6)
-(50,21,4,12)
-(56,22,3,12)
-(57,28,13,14)
-(64,30,18,10)
-(69,34,16,17)
-(75,32,10,16)
-(76,21,2,7)
-(76,30,8,14)
-(77,38,18,19)
-(93,46,22,23)
-(95,40,12,20)
-(96,38,10,18)
-(96,45,24,18)
-```
-
-The source says the full 28-entry nonexistence side also includes complements. Until the exact original row table is recovered, this repository will **not reconstruct the missing rows from memory or inference** and pretend they are the original atlas.
-
-## The transport layer
-
-The second half of the program is a typed relation graph between mathematical object classes.
-
-The recovered source reports:
-
-- **141** verified composable edges;
-- **8** distinct transports;
-- **211** endpoints;
-- **0** disagreements in the composition checks.
-
-The transport machinery matters because many classical equivalences in design theory, coding theory, graph theory and matrix theory are only valid under specific parameter conventions and proposition types. A syntactically plausible bridge is not automatically a theorem.
-
-### A load-bearing negative control
-
-The source explicitly refused to emit a transport of the form
-
-```text
-Matrix.IsHadamard  <->  hadamard:n
-```
-
-because those labels denote different propositions at different levels of specificity. Treating them as interchangeable would collapse distinct mathematical statements.
-
-That refusal is part of the result. A transport atlas that cannot say **no** is not a trustworthy transport atlas.
-
-See [`TRANSPORT-TYPING.md`](TRANSPORT-TYPING.md).
-
-## What is public here now
-
-This repository currently preserves:
-
-1. the recovered program definition and scale;
-2. the known strongly-regular nonexistence examples explicitly printed by the source audit;
-3. the exact transport-count / endpoint-count / disagreement-count summary;
-4. the proposition-typing integrity rule;
-5. the source lineage and recovery debt.
-
-## What is not yet reconstructed here
-
-The following original source assets have not yet been recovered into this focused home:
-
-- the complete 119-row parameter table;
-- the exact 91/28 row partition in machine-readable form;
-- the complete 141-edge transport table;
-- the names and definitions of all eight transport types;
-- per-edge verifier receipts / proofs;
-- the exact 211-endpoint registry;
-- the original source hashes from `graph-bridge-real-delivery.zip`.
-
-Those are source-recovery tasks. Missing rows will not be guessed.
-
-## Authority boundary
-
-The counts and examples above are **source-audit facts recovered from the public archive-mining record**. They are not upgraded here into independent historical novelty claims or fresh proofs of every existence/nonexistence row.
-
-Where an existence or nonexistence entry ultimately depends on an external catalogue or classical theorem, the final recovered atlas should name that dependency explicitly.
+Live-database connectivity remains unresolved because the original database is absent. The connectivity check replayed here uses a synthetic fixture. An independent frozen catalogue version/date and full external-reference audit remain outstanding.
 
 ## Provenance
 
-Before this focused repository existed, the program was publicly visible only as a buried-program paragraph in:
+The program was previously summarized in `jaredwilder/mathematics-under-the-wrong-filename`. Original archive: `graph-bridge-real-delivery.zip`, 51,599 bytes, SHA-256:
 
-`jaredwilder/mathematics-under-the-wrong-filename`
+```text
+35e069de7e386442c17888be88ad6fd0585136a8f8cfc60de071f006997ef914
+```
 
-That release explains that a filename-based mining pass missed 93 mathematically substantive archives whose names did not look mathematical. `graph-bridge-real-delivery.zip` was one of the characteristic misses.
+Original members are preserved under [atlas/](atlas/README.md). [Source recovery](verification/source-recovery.json) maps public files to original members, byte sizes and SHA-256 values. [SOURCE-RECOVERY.md](SOURCE-RECOVERY.md) lists completed recovery and remaining authority checks.
 
-See [`PROVENANCE.md`](PROVENANCE.md) and [`SOURCE-RECOVERY.md`](SOURCE-RECOVERY.md).
-
-## Current status
-
-**PROGRAM PUBLIC / COMPLETE ATLAS BYTES NOT YET RECOVERED.**
-
-The focused home now exists. The next job is exact source reconstruction, not another summary layer.
+The historical `DELIVERY-VALIDATION.json` says 23 manifested files. Direct inspection finds 24 manifest entries and 25 source files. The historical file is preserved unchanged and the discrepancy is recorded explicitly.

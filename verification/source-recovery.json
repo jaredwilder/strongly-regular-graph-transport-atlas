@@ -1,0 +1,207 @@
+{
+  "source_archive": "graph-bridge-real-delivery.zip",
+  "source_archive_bytes": 51599,
+  "source_archive_sha256": "35e069de7e386442c17888be88ad6fd0585136a8f8cfc60de071f006997ef914",
+  "counts": {
+    "rows": 119,
+    "uniqueParameterRows": 119,
+    "existsRows": 91,
+    "noneRows": 28,
+    "nonemptyJsonlRows": 141,
+    "distinctExactJsonlRows": 141,
+    "distinctTypedEdges": 141,
+    "selfEdges": 0,
+    "endpoints": 211,
+    "transportDefinitions": 8,
+    "transportRuleNames": 8,
+    "recordedDisagreements": 0.0,
+    "oneSidedTransports": 6,
+    "caseComparisons": 162.0,
+    "manifestRows": 24,
+    "payloadFilesIncludingManifest": 25,
+    "historicalReportedManifestedFiles": 23
+  },
+  "caveats": [
+    "Historical PASS and verified labels remain source claims; no verifier was executed in this recovery.",
+    "Six transports are one-sided positive checks. Live-database connectivity remains unresolved.",
+    "Brouwer subset has row URLs but no independently verified frozen-source date in this recovery.",
+    "DELIVERY-VALIDATION.json says manifestedFiles=23; actual historical manifest covers 24 nonmanifest files, and ZIP contains 25 files total."
+  ],
+  "files": [
+    {
+      "source_member": "graph_bridge_real_delivery/audit/original-srg_transports.py",
+      "public_path": "atlas/audit/original-srg_transports.py",
+      "bytes": 7623,
+      "sha256": "28bc86924e128c479afdea7846e145656211126eafef3567a27506a6c1f76f78",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/audit/original-srg-transports-numbered.txt",
+      "public_path": "atlas/audit/original-srg-transports-numbered.txt",
+      "bytes": 8757,
+      "sha256": "ae4dab1f060d0e61ff4ec499b7d026247cfa70d02fbca1d9a4d799a590f90c5a",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/brouwer-ground-truth.json",
+      "public_path": "atlas/brouwer-ground-truth.json",
+      "bytes": 31571,
+      "sha256": "74d5d7e9af10f56a5cbd079fb2a3bfaef4d876565353d51aab47b4b51ce205ce",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/connectivity_impact.py",
+      "public_path": "atlas/connectivity_impact.py",
+      "bytes": 10052,
+      "sha256": "eee658b394037929bf00d2e768e749915188bb4705eca71ab3da58e1246c5f71",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/CONNECTIVITY-REPORT.md",
+      "public_path": "atlas/CONNECTIVITY-REPORT.md",
+      "bytes": 3268,
+      "sha256": "404351312238950a5d6bceec48d1cebf8a01f5ba9bed6fca0271f9a2016df06d",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/CONTRACT-CHECKLIST.md",
+      "public_path": "atlas/CONTRACT-CHECKLIST.md",
+      "bytes": 1333,
+      "sha256": "19237d74a3ac9a260a4470c1a3de4f6800545c38c1d7e714632fed206bb3e690",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/COVER-NOTE.md",
+      "public_path": "atlas/COVER-NOTE.md",
+      "bytes": 1826,
+      "sha256": "8171c241f19e7386981e8f7c8db70935197f182df1c2627ff3b272d752f18446",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/CURRENT-SRG-TRANSPORTS-AUDIT.md",
+      "public_path": "atlas/CURRENT-SRG-TRANSPORTS-AUDIT.md",
+      "bytes": 2872,
+      "sha256": "67f656d40d83d0885ff5ddd6b83855433860014c4d7d82391ca93d96702f0ea7",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/DELIVERY-VALIDATION.json",
+      "public_path": "atlas/DELIVERY-VALIDATION.json",
+      "bytes": 348,
+      "sha256": "a198827ebf4c0d1d08f5297812f139cbb4f566f3139fa1d6ac001e2fac1143a1",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/independent_check.py",
+      "public_path": "atlas/independent_check.py",
+      "bytes": 4798,
+      "sha256": "420b21683b13d182729ebabad5586ed019421e200247565dbe80e0a13610edb7",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/connectivity-selftest.log",
+      "public_path": "atlas/logs/connectivity-selftest.log",
+      "bytes": 208,
+      "sha256": "60564ee9074086fe79c801170c9fa06a4758a32395c2bd840f72be57713d66f2",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/delivery-selftests.log",
+      "public_path": "atlas/logs/delivery-selftests.log",
+      "bytes": 249,
+      "sha256": "deda9c3bc59e6ec5375c7ed18193767e4f4b46e51b21f8e58aa5329d8f843b72",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/independent-check.log",
+      "public_path": "atlas/logs/independent-check.log",
+      "bytes": 1074,
+      "sha256": "7a3dbc538fdbcf39e513a1436b5f7f77fa08d10ea8410677e3a0f02fe2f93784",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/original-run.exit-code.txt",
+      "public_path": "atlas/logs/original-run.exit-code.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/original-run.stderr.txt",
+      "public_path": "atlas/logs/original-run.stderr.txt",
+      "bytes": 533,
+      "sha256": "accd2de9c2b153d0d28b7178c66f33eec55b1c302f16efe2c6719256c75634ea",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/original-run.stdout.txt",
+      "public_path": "atlas/logs/original-run.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/logs/srg-transports-run.log",
+      "public_path": "atlas/logs/srg-transports-run.log",
+      "bytes": 1557,
+      "sha256": "3ccb4ce81a764669dee1eaef588f52059927e4a635a1485217d9a6df41e62fbb",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/MANIFEST.sha256",
+      "public_path": "atlas/MANIFEST.sha256",
+      "bytes": 2186,
+      "sha256": "84c81ea1edefbb4d2ae203f9cce14a2d2749de248f3e554cb5d2cf21afa003b9",
+      "historical_manifest_matched": false
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/README.md",
+      "public_path": "atlas/README.md",
+      "bytes": 2901,
+      "sha256": "9852d02a4d611e0c2f2d04155dc6102f2eed1cc6d749c0081b02ff03f3812430",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/run_delivery_selftests.py",
+      "public_path": "atlas/run_delivery_selftests.py",
+      "bytes": 1751,
+      "sha256": "615e6c59a0db2829e8bde1c786416f0720b5518b88cac38a0a4590a8d20516bb",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/SELFTEST-RECEIPT.json",
+      "public_path": "atlas/SELFTEST-RECEIPT.json",
+      "bytes": 3169,
+      "sha256": "b0ad039389a560d2f48bd8e7fe592e052b9552113b3f8baa26da0d97f36caaa0",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/SOURCE-MAP.md",
+      "public_path": "atlas/SOURCE-MAP.md",
+      "bytes": 2088,
+      "sha256": "249397105f5a411c2b0659e8b8d355ac84512a04e8c24fd33d2e127c63314086",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/srg_transports.py",
+      "public_path": "atlas/srg_transports.py",
+      "bytes": 33381,
+      "sha256": "6b97d9d8702a196d445165f6cd640a234eb32ce067408e65c0b36c7dc9a8f83d",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/verification-output.json",
+      "public_path": "atlas/verification-output.json",
+      "bytes": 84163,
+      "sha256": "175884e65c16e43accce7373e611aac268524c9e9bda27a9b49ea1dc063b293b",
+      "historical_manifest_matched": true
+    },
+    {
+      "source_member": "graph_bridge_real_delivery/verified-edges.jsonl",
+      "public_path": "atlas/verified-edges.jsonl",
+      "bytes": 46770,
+      "sha256": "d0819912fa3881caa4e99cde8e8acc1aec16d6cc1fe8d620ca76e8dd354ff0cf",
+      "historical_manifest_matched": true
+    }
+  ]
+}
